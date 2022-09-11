@@ -22,3 +22,8 @@ jobs:
       
       - name: Compile resume
         run: pdflatex main.tex
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: resume
+          path: main.pdf
