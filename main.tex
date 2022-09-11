@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[8pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Daniel}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Draper}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\large Full-Stack Machine Learning Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{9}{Karlsruhe, Germany}\\
+	\icon{Phone}{9}{+49 176 95767859}\\
+	\icon{At}{9}{\href{mailto:germandrummer92@gmail.com}{germandrummer92@gmail.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	%\icon{Globe}{12}{\href{https://alyx.vance.me}{alyx.vance.me}}\\
+	\icon{Github}{9}{\href{https://github.com/germandrummer92}{github.com/germandrummer92}}\\
+	\icon{Twitter}{9}{\href{https://twitter.com/@germandrummer92}{@germandrummer92}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	I am a Software Engineer with >4 years of experience working in the full software stack, developing SaaS products. My work has entailed \textbf{Mobile Applications}, \textbf{Web-Frontends}, \textbf{RESTful backend APIs} as well as full Computer Vision \textbf{Machine Learning Models} including deployment on \textbf{Kubernetes}. Software Craftsmanship is my passion: I always aim for delivering clean, tested and readable software.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{Python}{100}
+		\baritem{Tensorflow/Keras}{70}
+		\baritem{TypeScript}{80}
+		\baritem{Node.js/express}{70}
+		\baritem{MongoDB}{70}
+		\baritem{Cloud/Kubernetes}{40}
+		\baritem{Kotlin}{40}
+		\baritem{Swift}{40}
+	\end{barchart}
+\end{minipage}
+
+%\begin{center}
+%	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender}
+%\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2019 -- Current}
+		{Full-stack software engineer}
+		{understand.ai gmbH}
+		{Worked on entire tool chain of the understand.ai annotation product: Producing ground-truth annotations for perception stacks of autonomous driving using automation. Frontend-development using vue.js, opengl with typescript. Backend development using express on top of a MongoDB non-relational database. Developed computer vision machine learning models using python, tensorflow, keras. Data engineering using numpy, open3d, scipy. Deployment of models and batch data processing jobs on Kubernetes. \\ \texttt{Python}\slashsep\texttt{TypeScript}\slashsep\texttt{Vue.js}\slashsep\texttt{Node.js}\slashsep\texttt{MongoDB}\slashsep\texttt{Kubernetes}\slashsep\texttt{Tensorflow/Keras}}
+	\entry
+		{2017 -- 2019}
+		{Full stack mobile applications engineer}
+		{LogMeIn Inc.}
+		{Full-Stack Software Engineer. Worked on platform team managing backend services related to the real-time-communication (rtc) of \textit{GoToMeeting}. Worked on the native \textit{GoToMeeting}, \textit{GoToMeeting Messenger} iOS and android applications. Part of the internationally distributed team that developed a new rtc-enabled react-native cross-platform application \textit{GoToConnect} from scratch. \texttt{Swift}\slashsep\texttt{Kotlin}\slashsep\texttt{TypeScript}\slashsep\texttt{iOS}\slashsep\texttt{Android}}
+	\entry
+		{2015 -- 2017\\\footnotesize{part-time}}
+		{Working student software engineering}
+		{1\&1 Telecommunications SE}
+		{Worked on network/data center monitoring tools: Alert management for network operation engineers to get early alerts on potential incidents in 1\&1s own data centers according to aggregated network statistics. Simple Network Management Protocol (SNMP) querying/aggregation for datacenter-network devices (routers etc.).
+		 \\ \texttt{Java}\slashsep\texttt{Python}\slashsep\texttt{Ansible}\slashsep\texttt{Docker}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2015 -- 2017}
+		{Computer Science, Msc}
+		{Karlsruhe Institute of Technology}
+		{Focus on machine learning/artificial intelligence classes, especially in the automatic speech recognition and natural language processing realms. Final Thesis: Online neural-network-based Language Identification. Available on \color{blue}{\href{https://github.com/Germandrummer92/master-thesis}{github}}.}
+	\entry
+		{2012 -- 2015}
+		{Computer Science, Bsc}
+		{Karlsruhe Institute of Technology}
+		{Thesis: A Theory of Refinement of Cyber-Physical-Systems into Implementations. Available on \color{blue}{\href{https://github.com/Germandrummer92/Bachelor-Thesis}{github}}.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	\newline
+	\textbf{German} - native\\
+	\textbf{English} - near native\\
+
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+	I love playing percussion/timpani in symphonic orchestras. Playing in 3+ different orchestras:
+	\begin{itemize}
+	  \item{Collegium Musicum KIT}
+	  \item{Philharmonie KIT}
+	  \item{Sinfonieorchester KIT}
+	  \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Non profit}
+	
+	2017 - Orangutan Foundation International - Construction Volunteer in Pangkalan Bun, Indonesia. Helped build wooden walkways and shelters in old zoo.
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
