@@ -21,7 +21,8 @@ jobs:
           sudo apt-get install -y --no-install-recommends texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
       
       - name: Compile resume
-        run: pdflatex main.tex
+        run: pdflatex "\newcommand{\generated}{by a \textcolor{blue}{\href{https://github.com/germandrummer92/resume/actions/runs/${{ github.run_id  }}}{github action}}}\input{main.tex}"
+ 
 
       - uses: actions/upload-artifact@v3
         with:

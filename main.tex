@@ -23,6 +23,10 @@
 \documentclass[8pt]{developercv} % Default font size, values from 8-12pt are recommended
 
 %----------------------------------------------------------------------------------------
+\ifdefined\generated
+\else
+\newcommand{\generated}{manually}
+\fi
 
 \begin{document}
 
@@ -172,6 +176,12 @@
 	\cvsect{Non profit}
 	
 	2017 - Orangutan Foundation International - Construction Volunteer in Pangkalan Bun, Indonesia. Helped build wooden walkways and shelters in old zoo.
+\end{minipage}
+\mbox{}
+\vfill
+\begin{minipage}[t]{1.0\textwidth}
+\centering{This document was generated \generated~on \today. Source Code available on \color{blue}{\href{https://github.com/Germandrummer92/resume}{github}}.}
+
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
