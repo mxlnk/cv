@@ -23,6 +23,7 @@
 
 \documentclass[8pt]{developercv} % Default font size, values from 8-12pt are recommended
 \usepackage{enumitem}
+\usepackage{tikz}
 
 %----------------------------------------------------------------------------------------
 \ifdefined\generated
@@ -37,7 +38,7 @@
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page width for name
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	% If your name is very short, use just one of the lines below
 	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
@@ -49,7 +50,7 @@
 	
 	{\large Founding Full-Stack Engineer} % Career or current job title
 \end{minipage}
-\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+\begin{minipage}[t]{0.3\textwidth} % 30% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
@@ -59,9 +60,19 @@
 	\icon{At}{9}{\color{blue}{\href{mailto:contact@mxlink.de}{contact@mxlink.de}}}\\
 	\icon{Github}{9}{\color{blue}{\href{https://github.com/mxlnk}{github.com/mxlnk}}}\\
 \end{minipage}
-\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the second row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-		
+	\begin{tikzpicture}
+		% Draw red border circle
+		\draw[darkgray, line width=2pt] (0,0) circle (1.5cm);
+		% Clip image to circle
+		\begin{scope}
+			\clip (0,0) circle (1.5cm);
+			\node[anchor=center] at (0,-0.2) {\includegraphics[width=3.5cm]{./profile.jpeg}};
+		\end{scope}
+		%adjust this coordinate to move image
+	\end{tikzpicture}
+
 \end{minipage}
 
 \vspace{0.5cm}
@@ -91,8 +102,10 @@
 
 	A key technical contributor in two growing startups, working end-to-end across backend services, frontend applications, CI/CD and cloud infrastructure.
 
-	Mainly experienced with TypeScript, Node.js, React, Vue.js, PostgreSQL and MongoDB, but not limited to these. Always eager to learn new technologies and improve my skills.
+	Currently using TypeScript, Node.js, React, PostgreSQL, Google Cloud Platform, Kubernetes and Docker but not limited to these. Always eager to learn new technologies and improve my skills.
 
+	Prior experience with Vue.js, MongoDB and Python.
+	
 	I highly value maintainable and readable code and strive to eliminate over-engineering and premature optimization.
 \end{minipage}
 
