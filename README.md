@@ -7,13 +7,13 @@ Personal LaTeX resume based on [latextemplates.com template](https://www.latexte
 
 Make sure you have texlive installed:
 
-linux
+### linux
 ```bash
 sudo apt-get update &&
 sudo apt-get install -y --no-install-recommends texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
 ```
 
-macos
+### macos
 ```bash
 brew install texlive
 ```
