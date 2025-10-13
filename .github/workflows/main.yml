@@ -24,7 +24,7 @@ jobs:
         run: pdflatex "\newcommand{\generated}{by a \textcolor{blue}{\href{https://github.com/germandrummer92/resume/actions/runs/${{ github.run_id  }}}{github action}}}\input{main.tex}"
  
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: resume
           path: main.pdf
